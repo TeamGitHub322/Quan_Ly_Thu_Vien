@@ -75,15 +75,15 @@ namespace Quan_Ly_Thu_Vien
 
         private void reset22()
         {
-            listView2.Items.Clear();
-            table2 = connector.FindObject("7", textSearch2.Text.Trim());
-            int i = 0;
-            foreach (DataRow row in table2.Rows)
-            {
-                listView2.Items.Add(row[0].ToString());
-                listView2.Items[i].SubItems.Add(row[1].ToString());
-                i++;
-            }
+            //listView2.Items.Clear();
+            //table2 = connector.FindObject("7", textSearch2.Text.Trim());
+            //int i = 0;
+            //foreach (DataRow row in table2.Rows)
+            //{
+            //    listView2.Items.Add(row[0].ToString());
+            //    listView2.Items[i].SubItems.Add(row[1].ToString());
+            //    i++;
+            //}
         }
 
         private void reset3()

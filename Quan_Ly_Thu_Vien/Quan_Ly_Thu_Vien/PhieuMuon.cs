@@ -75,15 +75,15 @@ namespace Quan_Ly_Thu_Vien
 
         private void reset22()
         {
-            //listView2.Items.Clear();
-            //table2 = connector.FindObject("7", textSearch2.Text.Trim());
-            //int i = 0;
-            //foreach (DataRow row in table2.Rows)
-            //{
-            //    listView2.Items.Add(row[0].ToString());
-            //    listView2.Items[i].SubItems.Add(row[1].ToString());
-            //    i++;
-            //}
+            listView2.Items.Clear();
+            table2 = connector.FindObject("7", textSearch2.Text.Trim());
+            int i = 0;
+            foreach (DataRow row in table2.Rows)
+            {
+                listView2.Items.Add(row[0].ToString());
+                listView2.Items[i].SubItems.Add(row[1].ToString());
+                i++;
+            }
         }
 
         private void reset3()
@@ -106,15 +106,15 @@ namespace Quan_Ly_Thu_Vien
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count > 0)
-            {
-                int index = listView1.SelectedItems[0].Index;
-                textBCID1.Text = table1.Rows[index][0].ToString();
-                textReaderID.Text = table1.Rows[index][1].ToString();
-                textDate1.Text = table1.Rows[index][2].ToString().Substring(0, 11);
-                textDate2.Text = table1.Rows[index][3].ToString().Substring(0, 11);
-                textNote.Text = table1.Rows[index][4].ToString();
-            }
+            //if (listView1.SelectedItems.Count > 0)
+            //{
+            //    int index = listView1.SelectedItems[0].Index;
+            //    textBCID1.Text = table1.Rows[index][0].ToString();
+            //    textReaderID.Text = table1.Rows[index][1].ToString();
+            //    textDate1.Text = table1.Rows[index][2].ToString().Substring(0, 11);
+            //    textDate2.Text = table1.Rows[index][3].ToString().Substring(0, 11);
+            //    textNote.Text = table1.Rows[index][4].ToString();
+            //}
         }
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)

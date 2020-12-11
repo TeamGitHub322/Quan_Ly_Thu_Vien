@@ -88,43 +88,43 @@ namespace Quan_Ly_Thu_Vien
 
         private void reset3()
         {
-            //table3 = new DataTable();
-            //table3 = connector.LoadData("5");
-            //IDstring = "";
-            //foreach (DataRow row in table3.Rows)
-            //{
-            //    IDstring = IDstring + row[0].ToString().Trim() + "/";
-            //}
-            //table4 = new DataTable();
-            //table4 = connector.LoadData("2");
-            //IDstring2 = "";
-            //foreach (DataRow row in table4.Rows)
-            //{
-            //    IDstring2 = IDstring2 + row[0].ToString().Trim() + "/";
-            //}
+            table3 = new DataTable();
+            table3 = connector.LoadData("5");
+            IDstring = "";
+            foreach (DataRow row in table3.Rows)
+            {
+                IDstring = IDstring + row[0].ToString().Trim() + "/";
+            }
+            table4 = new DataTable();
+            table4 = connector.LoadData("2");
+            IDstring2 = "";
+            foreach (DataRow row in table4.Rows)
+            {
+                IDstring2 = IDstring2 + row[0].ToString().Trim() + "/";
+            }
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count > 0)
-            {
-                int index = listView1.SelectedItems[0].Index;
-                textBCID1.Text = table1.Rows[index][0].ToString();
-                textReaderID.Text = table1.Rows[index][1].ToString();
-                textDate1.Text = table1.Rows[index][2].ToString().Substring(0, 11);
-                textDate2.Text = table1.Rows[index][3].ToString().Substring(0, 11);
-                textNote.Text = table1.Rows[index][4].ToString();
-            }
+            //if (listView1.SelectedItems.Count > 0)
+            //{
+            //    int index = listView1.SelectedItems[0].Index;
+            //    textBCID1.Text = table1.Rows[index][0].ToString();
+            //    textReaderID.Text = table1.Rows[index][1].ToString();
+            //    textDate1.Text = table1.Rows[index][2].ToString().Substring(0, 11);
+            //    textDate2.Text = table1.Rows[index][3].ToString().Substring(0, 11);
+            //    textNote.Text = table1.Rows[index][4].ToString();
+            //}
         }
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (listView2.SelectedItems.Count > 0)
-            //{
-            //    int index = listView2.SelectedItems[0].Index;
-            //    textBCID2.Text = table2.Rows[index][0].ToString();
-            //    textUnique.Text = table2.Rows[index][1].ToString();
-            //}
+            if (listView2.SelectedItems.Count > 0)
+            {
+                int index = listView2.SelectedItems[0].Index;
+                textBCID2.Text = table2.Rows[index][0].ToString();
+                textUnique.Text = table2.Rows[index][1].ToString();
+            }
         }
 
         private void radView_CheckedChanged(object sender, EventArgs e)

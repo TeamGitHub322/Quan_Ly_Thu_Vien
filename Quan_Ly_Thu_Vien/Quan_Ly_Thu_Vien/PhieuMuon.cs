@@ -106,15 +106,15 @@ namespace Quan_Ly_Thu_Vien
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if (listView1.SelectedItems.Count > 0)
-            //{
-            //    int index = listView1.SelectedItems[0].Index;
-            //    textBCID1.Text = table1.Rows[index][0].ToString();
-            //    textReaderID.Text = table1.Rows[index][1].ToString();
-            //    textDate1.Text = table1.Rows[index][2].ToString().Substring(0, 11);
-            //    textDate2.Text = table1.Rows[index][3].ToString().Substring(0, 11);
-            //    textNote.Text = table1.Rows[index][4].ToString();
-            //}
+            if (listView1.SelectedItems.Count > 0)
+            {
+                int index = listView1.SelectedItems[0].Index;
+                textBCID1.Text = table1.Rows[index][0].ToString();
+                textReaderID.Text = table1.Rows[index][1].ToString();
+                textDate1.Text = table1.Rows[index][2].ToString().Substring(0, 11);
+                textDate2.Text = table1.Rows[index][3].ToString().Substring(0, 11);
+                textNote.Text = table1.Rows[index][4].ToString();
+            }
         }
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
@@ -154,27 +154,27 @@ namespace Quan_Ly_Thu_Vien
 
         private void radView2_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton rad = (RadioButton)(sender);
-            if (rad.Checked == true)
-            {
-                butFree2.Text = rad.Text;
-                if (rad.Text == "View")
-                {
-                    butFree2.Enabled = false;
-                    textBCID2.ReadOnly = textUnique.ReadOnly = true;
-                }
-                else
-                {
-                    butFree2.Enabled = true;
-                    textBCID2.ReadOnly = true;
-                    textUnique.ReadOnly = false;
-                    if (rad.Text == "Add")
-                    {
-                        textBCID2.ReadOnly = false;
-                        textBCID2.Text = textUnique.Text = "";
-                    }
-                }
-            }
+            //RadioButton rad = (RadioButton)(sender);
+            //if (rad.Checked == true)
+            //{
+            //    butFree2.Text = rad.Text;
+            //    if (rad.Text == "View")
+            //    {
+            //        butFree2.Enabled = false;
+            //        textBCID2.ReadOnly = textUnique.ReadOnly = true;
+            //    }
+            //    else
+            //    {
+            //        butFree2.Enabled = true;
+            //        textBCID2.ReadOnly = true;
+            //        textUnique.ReadOnly = false;
+            //        if (rad.Text == "Add")
+            //        {
+            //            textBCID2.ReadOnly = false;
+            //            textBCID2.Text = textUnique.Text = "";
+            //        }
+            //    }
+            //}
         }
 
         private void butDel_Click(object sender, EventArgs e)

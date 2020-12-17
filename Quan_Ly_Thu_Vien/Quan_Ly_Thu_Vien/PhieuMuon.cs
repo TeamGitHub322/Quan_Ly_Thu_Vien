@@ -154,27 +154,27 @@ namespace Quan_Ly_Thu_Vien
 
         private void radView2_CheckedChanged(object sender, EventArgs e)
         {
-            //RadioButton rad = (RadioButton)(sender);
-            //if (rad.Checked == true)
-            //{
-            //    butFree2.Text = rad.Text;
-            //    if (rad.Text == "View")
-            //    {
-            //        butFree2.Enabled = false;
-            //        textBCID2.ReadOnly = textUnique.ReadOnly = true;
-            //    }
-            //    else
-            //    {
-            //        butFree2.Enabled = true;
-            //        textBCID2.ReadOnly = true;
-            //        textUnique.ReadOnly = false;
-            //        if (rad.Text == "Add")
-            //        {
-            //            textBCID2.ReadOnly = false;
-            //            textBCID2.Text = textUnique.Text = "";
-            //        }
-            //    }
-            //}
+            RadioButton rad = (RadioButton)(sender);
+            if (rad.Checked == true)
+            {
+                butFree2.Text = rad.Text;
+                if (rad.Text == "View")
+                {
+                    butFree2.Enabled = false;
+                    textBCID2.ReadOnly = textUnique.ReadOnly = true;
+                }
+                else
+                {
+                    butFree2.Enabled = true;
+                    textBCID2.ReadOnly = true;
+                    textUnique.ReadOnly = false;
+                    if (rad.Text == "Add")
+                    {
+                        textBCID2.ReadOnly = false;
+                        textBCID2.Text = textUnique.Text = "";
+                    }
+                }
+            }
         }
 
         private void butDel_Click(object sender, EventArgs e)
@@ -227,22 +227,7 @@ namespace Quan_Ly_Thu_Vien
 
         private void butSearch2_Click(object sender, EventArgs e)
         {
-            if (butSearch2.Text.Trim() == "Search Mode")
-            {
-                if (textSearch2.Text.Trim() == "")
-                {
-                    MessageBox.Show("Text box is empty!", "O___O", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    textSearch2.Focus();
-                    return;
-                }
-                butSearch2.Text = "Normal Mode";
-                reset22();
-            }
-            else
-            {
-                butSearch2.Text = "Search Mode";
-                reset21();
-            }
+
         }
 
         private bool check1(int k)

@@ -227,7 +227,22 @@ namespace Quan_Ly_Thu_Vien
 
         private void butSearch2_Click(object sender, EventArgs e)
         {
-
+            if (butSearch2.Text.Trim() == "Search Mode")
+            {
+                if (textSearch2.Text.Trim() == "")
+                {
+                    MessageBox.Show("Text box is empty!", "O___O", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textSearch2.Focus();
+                    return;
+                }
+                butSearch2.Text = "Normal Mode";
+                reset22();
+            }
+            else
+            {
+                butSearch2.Text = "Search Mode";
+                reset21();
+            }
         }
 
         private bool check1(int k)

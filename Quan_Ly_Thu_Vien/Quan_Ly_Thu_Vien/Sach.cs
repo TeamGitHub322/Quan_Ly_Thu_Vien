@@ -211,7 +211,7 @@ namespace QuanLyThuVien
 
         private void butSearch_Click(object sender, EventArgs e)
         {
-            if (butSearch.Text.Trim() == "Search Mode")
+            if (butSearch.Text.Trim() == "Tìm kiếm")
             {
                 if (textSearch.Text.Trim() == "")
                 {
@@ -219,19 +219,19 @@ namespace QuanLyThuVien
                     textSearch.Focus();
                     return;
                 }
-                butSearch.Text = "Normal Mode";
+                butSearch.Text = "Hủy tìm kiếm";
                 reset12();
             }
             else
             {
-                butSearch.Text = "Search Mode";
+                butSearch.Text = "Tìm kiếm";
                 reset11();
             }
         }
 
         private void butSearch2_Click(object sender, EventArgs e)
         {
-            if (butSearch2.Text.Trim() == "Search Mode")
+            if (butSearch2.Text.Trim() == "Tìm kiếm")
             {
                 if (textSearch2.Text.Trim() == "")
                 {
@@ -239,12 +239,12 @@ namespace QuanLyThuVien
                     textSearch2.Focus();
                     return;
                 }
-                butSearch2.Text = "Normal Mode";
+                butSearch2.Text = "Hủy tìm kiếm";
                 reset22();
             }
             else
             {
-                butSearch2.Text = "Search Mode";
+                butSearch2.Text = "Tìm kiếm";
                 reset21();
             }
         }

@@ -36,6 +36,12 @@
                this.label14 = new System.Windows.Forms.Label();
                this.label15 = new System.Windows.Forms.Label();
                this.label16 = new System.Windows.Forms.Label();
+               this.panel6 = new System.Windows.Forms.Panel();
+               this.listView2 = new System.Windows.Forms.ListView();
+               this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+               this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+               this.panel5 = new System.Windows.Forms.Panel();
+               this.pictureBox1 = new System.Windows.Forms.PictureBox();
                this.panel7 = new System.Windows.Forms.Panel();
                this.textSearch2 = new System.Windows.Forms.TextBox();
                this.butSearch2 = new System.Windows.Forms.Button();
@@ -45,12 +51,6 @@
                this.radView2 = new System.Windows.Forms.RadioButton();
                this.label9 = new System.Windows.Forms.Label();
                this.butFree2 = new System.Windows.Forms.Button();
-               this.panel6 = new System.Windows.Forms.Panel();
-               this.listView2 = new System.Windows.Forms.ListView();
-               this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-               this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-               this.panel5 = new System.Windows.Forms.Panel();
-               this.pictureBox1 = new System.Windows.Forms.PictureBox();
                this.panel2 = new System.Windows.Forms.Panel();
                this.textGenre = new System.Windows.Forms.TextBox();
                this.textYear = new System.Windows.Forms.TextBox();
@@ -82,10 +82,10 @@
                this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
                this.panel1.SuspendLayout();
                this.panel8.SuspendLayout();
-               this.panel7.SuspendLayout();
                this.panel6.SuspendLayout();
                this.panel5.SuspendLayout();
                ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+               this.panel7.SuspendLayout();
                this.panel2.SuspendLayout();
                this.panel4.SuspendLayout();
                this.panel3.SuspendLayout();
@@ -94,6 +94,7 @@
                // panel1
                // 
                this.panel1.Controls.Add(this.panel8);
+               this.panel1.Controls.Add(this.panel7);
                this.panel1.Controls.Add(this.panel6);
                this.panel1.Controls.Add(this.panel5);
                this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -111,15 +112,15 @@
                this.panel8.Controls.Add(this.label15);
                this.panel8.Controls.Add(this.label16);
                this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-               this.panel8.Location = new System.Drawing.Point(393, 427);
+               this.panel8.Location = new System.Drawing.Point(393, 268);
                this.panel8.Name = "panel8";
-               this.panel8.Size = new System.Drawing.Size(281, 0);
+               this.panel8.Size = new System.Drawing.Size(281, 159);
                this.panel8.TabIndex = 17;
                // 
                // textUnique
                // 
                this.textUnique.BackColor = System.Drawing.SystemColors.ActiveCaption;
-               this.textUnique.Location = new System.Drawing.Point(120, 89);
+               this.textUnique.Location = new System.Drawing.Point(136, 90);
                this.textUnique.Name = "textUnique";
                this.textUnique.ReadOnly = true;
                this.textUnique.Size = new System.Drawing.Size(102, 20);
@@ -128,7 +129,7 @@
                // textBookID2
                // 
                this.textBookID2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-               this.textBookID2.Location = new System.Drawing.Point(120, 59);
+               this.textBookID2.Location = new System.Drawing.Point(136, 60);
                this.textBookID2.Name = "textBookID2";
                this.textBookID2.ReadOnly = true;
                this.textBookID2.Size = new System.Drawing.Size(102, 20);
@@ -142,9 +143,9 @@
                this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                this.label14.Location = new System.Drawing.Point(13, 89);
                this.label14.Name = "label14";
-               this.label14.Size = new System.Drawing.Size(99, 21);
+               this.label14.Size = new System.Drawing.Size(117, 21);
                this.label14.TabIndex = 17;
-               this.label14.Text = "Unique Values";
+               this.label14.Text = "Giá trị duy nhất";
                // 
                // label15
                // 
@@ -154,9 +155,9 @@
                this.label15.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                this.label15.Location = new System.Drawing.Point(13, 58);
                this.label15.Name = "label15";
-               this.label15.Size = new System.Drawing.Size(62, 21);
+               this.label15.Size = new System.Drawing.Size(63, 21);
                this.label15.TabIndex = 16;
-               this.label15.Text = "Book ID";
+               this.label15.Text = "Mã sách";
                // 
                // label16
                // 
@@ -166,9 +167,68 @@
                this.label16.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                this.label16.Location = new System.Drawing.Point(59, 18);
                this.label16.Name = "label16";
-               this.label16.Size = new System.Drawing.Size(206, 25);
+               this.label16.Size = new System.Drawing.Size(200, 25);
                this.label16.TabIndex = 15;
-               this.label16.Text = "Unique Value Information";
+               this.label16.Text = "Thông tin sách duy nhất";
+               // 
+               // panel6
+               // 
+               this.panel6.Controls.Add(this.listView2);
+               this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+               this.panel6.Location = new System.Drawing.Point(0, 268);
+               this.panel6.Name = "panel6";
+               this.panel6.Size = new System.Drawing.Size(212, 159);
+               this.panel6.TabIndex = 15;
+               // 
+               // listView2
+               // 
+               this.listView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+               this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3,
+            this.columnHeader4});
+               this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
+               this.listView2.FullRowSelect = true;
+               this.listView2.GridLines = true;
+               this.listView2.HideSelection = false;
+               this.listView2.Location = new System.Drawing.Point(0, 0);
+               this.listView2.MultiSelect = false;
+               this.listView2.Name = "listView2";
+               this.listView2.Size = new System.Drawing.Size(212, 159);
+               this.listView2.TabIndex = 0;
+               this.listView2.UseCompatibleStateImageBehavior = false;
+               this.listView2.View = System.Windows.Forms.View.Details;
+               this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
+               // 
+               // columnHeader3
+               // 
+               this.columnHeader3.Text = "Book ID";
+               this.columnHeader3.Width = 57;
+               // 
+               // columnHeader4
+               // 
+               this.columnHeader4.Text = "Unique Values";
+               this.columnHeader4.Width = 151;
+               // 
+               // panel5
+               // 
+               this.panel5.Controls.Add(this.pictureBox1);
+               this.panel5.Controls.Add(this.panel2);
+               this.panel5.Controls.Add(this.panel4);
+               this.panel5.Controls.Add(this.panel3);
+               this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+               this.panel5.Location = new System.Drawing.Point(0, 0);
+               this.panel5.Name = "panel5";
+               this.panel5.Size = new System.Drawing.Size(674, 268);
+               this.panel5.TabIndex = 14;
+               // 
+               // pictureBox1
+               // 
+               this.pictureBox1.Image = global::Quan_Ly_Thu_Vien.Properties.Resources.Book_2;
+               this.pictureBox1.Location = new System.Drawing.Point(281, 185);
+               this.pictureBox1.Name = "pictureBox1";
+               this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+               this.pictureBox1.TabIndex = 15;
+               this.pictureBox1.TabStop = false;
                // 
                // panel7
                // 
@@ -182,7 +242,7 @@
                this.panel7.Controls.Add(this.radView2);
                this.panel7.Controls.Add(this.label9);
                this.panel7.Controls.Add(this.butFree2);
-               this.panel7.Location = new System.Drawing.Point(231, 406);
+               this.panel7.Location = new System.Drawing.Point(218, 269);
                this.panel7.Name = "panel7";
                this.panel7.Size = new System.Drawing.Size(169, 158);
                this.panel7.TabIndex = 16;
@@ -279,66 +339,6 @@
                this.butFree2.UseVisualStyleBackColor = true;
                this.butFree2.Click += new System.EventHandler(this.butFree2_Click);
                // 
-               // panel6
-               // 
-               this.panel6.Controls.Add(this.listView2);
-               this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-               this.panel6.Location = new System.Drawing.Point(0, 427);
-               this.panel6.Name = "panel6";
-               this.panel6.Size = new System.Drawing.Size(212, 0);
-               this.panel6.TabIndex = 15;
-               // 
-               // listView2
-               // 
-               this.listView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-               this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader3,
-            this.columnHeader4});
-               this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.listView2.FullRowSelect = true;
-               this.listView2.GridLines = true;
-               this.listView2.HideSelection = false;
-               this.listView2.Location = new System.Drawing.Point(0, 0);
-               this.listView2.MultiSelect = false;
-               this.listView2.Name = "listView2";
-               this.listView2.Size = new System.Drawing.Size(212, 0);
-               this.listView2.TabIndex = 0;
-               this.listView2.UseCompatibleStateImageBehavior = false;
-               this.listView2.View = System.Windows.Forms.View.Details;
-               this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
-               // 
-               // columnHeader3
-               // 
-               this.columnHeader3.Text = "Book ID";
-               this.columnHeader3.Width = 57;
-               // 
-               // columnHeader4
-               // 
-               this.columnHeader4.Text = "Unique Values";
-               this.columnHeader4.Width = 151;
-               // 
-               // panel5
-               // 
-               this.panel5.Controls.Add(this.pictureBox1);
-               this.panel5.Controls.Add(this.panel7);
-               this.panel5.Controls.Add(this.panel2);
-               this.panel5.Controls.Add(this.panel4);
-               this.panel5.Controls.Add(this.panel3);
-               this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-               this.panel5.Location = new System.Drawing.Point(0, 0);
-               this.panel5.Name = "panel5";
-               this.panel5.Size = new System.Drawing.Size(674, 427);
-               this.panel5.TabIndex = 14;
-               // 
-               // pictureBox1
-               // 
-               this.pictureBox1.Image = global::Quan_Ly_Thu_Vien.Properties.Resources.Book_2;
-               this.pictureBox1.Location = new System.Drawing.Point(281, 185);
-               this.pictureBox1.Name = "pictureBox1";
-               this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-               this.pictureBox1.TabIndex = 15;
-               this.pictureBox1.TabStop = false;
-               // 
                // panel2
                // 
                this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -360,7 +360,7 @@
                this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
                this.panel2.Location = new System.Drawing.Point(393, 0);
                this.panel2.Name = "panel2";
-               this.panel2.Size = new System.Drawing.Size(281, 427);
+               this.panel2.Size = new System.Drawing.Size(281, 268);
                this.panel2.TabIndex = 13;
                // 
                // textGenre
@@ -552,7 +552,7 @@
                this.butSearch.Name = "butSearch";
                this.butSearch.Size = new System.Drawing.Size(131, 23);
                this.butSearch.TabIndex = 8;
-               this.butSearch.Text = "Search Mode";
+               this.butSearch.Text = "Tìm kiếm";
                this.butSearch.UseVisualStyleBackColor = true;
                this.butSearch.Click += new System.EventHandler(this.butSearch_Click);
                // 
@@ -636,7 +636,7 @@
                this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
                this.panel3.Location = new System.Drawing.Point(0, 0);
                this.panel3.Name = "panel3";
-               this.panel3.Size = new System.Drawing.Size(212, 427);
+               this.panel3.Size = new System.Drawing.Size(212, 268);
                this.panel3.TabIndex = 11;
                // 
                // listView1
@@ -652,7 +652,7 @@
                this.listView1.Location = new System.Drawing.Point(0, 0);
                this.listView1.MultiSelect = false;
                this.listView1.Name = "listView1";
-               this.listView1.Size = new System.Drawing.Size(212, 427);
+               this.listView1.Size = new System.Drawing.Size(212, 268);
                this.listView1.TabIndex = 0;
                this.listView1.UseCompatibleStateImageBehavior = false;
                this.listView1.View = System.Windows.Forms.View.Details;
@@ -683,11 +683,11 @@
                this.panel1.ResumeLayout(false);
                this.panel8.ResumeLayout(false);
                this.panel8.PerformLayout();
-               this.panel7.ResumeLayout(false);
-               this.panel7.PerformLayout();
                this.panel6.ResumeLayout(false);
                this.panel5.ResumeLayout(false);
                ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+               this.panel7.ResumeLayout(false);
+               this.panel7.PerformLayout();
                this.panel2.ResumeLayout(false);
                this.panel2.PerformLayout();
                this.panel4.ResumeLayout(false);

@@ -246,7 +246,6 @@
                this.panel7.Name = "panel7";
                this.panel7.Size = new System.Drawing.Size(169, 158);
                this.panel7.TabIndex = 16;
-               this.panel7.Visible = false;
                // 
                // textSearch2
                // 
@@ -261,7 +260,7 @@
                this.butSearch2.Name = "butSearch2";
                this.butSearch2.Size = new System.Drawing.Size(131, 23);
                this.butSearch2.TabIndex = 10;
-               this.butSearch2.Text = "Search Mode";
+               this.butSearch2.Text = "Tìm kiếm";
                this.butSearch2.UseVisualStyleBackColor = true;
                this.butSearch2.Click += new System.EventHandler(this.butSearch2_Click);
                // 

@@ -373,20 +373,20 @@ namespace QuanLyThuVien
                 }
             }
             int p = 0;
-            for (int i = 0; i < table1.Rows.Count; i++)
-            {
-                if (textBookID2.Text.Trim() == table1.Rows[i][0].ToString().Trim())
-                {
-                    p = 1;
-                    break;
-                }
-            }
-            if (p == 0)
-            {
-                MessageBox.Show("Book ID's values must be in {" + IDstring1 + "}", "O___O", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                textBookID2.Focus();
-                return false;
-            }
+            //for (int i = 0; i < table1.Rows.Count; i++)
+            //{
+            //    if (textBookID2.Text.Trim() == table1.Rows[i][0].ToString().Trim())
+            //    {
+            //        p = 1;
+            //        break;
+            //    }
+            //}
+            //if (p == 0)
+            //{
+            //    MessageBox.Show("Book ID's values must be in {" + IDstring1 + "}", "O___O", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            //    textBookID2.Focus();
+            //    return false;
+            //}
             return true;
         }
 

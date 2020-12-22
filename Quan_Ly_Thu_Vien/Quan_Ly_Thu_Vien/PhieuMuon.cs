@@ -395,5 +395,10 @@ namespace Quan_Ly_Thu_Vien
         {
 
         }
+
+        private void TextUnique_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

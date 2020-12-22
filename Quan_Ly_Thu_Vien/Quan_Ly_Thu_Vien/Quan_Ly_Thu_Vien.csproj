@@ -62,6 +62,9 @@
     <Compile Include="Sach.designer.cs">
       <DependentUpon>Sach.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -121,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\QLTV.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\lo-dien-toa-do-thu-vien-song-ao-dep-nhat-singapore-buoc-1-buoc-la-chup-duoc-10-kieu-anh-12_20190606120418.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

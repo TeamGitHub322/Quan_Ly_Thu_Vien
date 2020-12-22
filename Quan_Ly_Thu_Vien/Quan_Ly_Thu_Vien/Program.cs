@@ -16,7 +16,7 @@ namespace Quan_Ly_Thu_Vien
           {
                Application.EnableVisualStyles();
                Application.SetCompatibleTextRenderingDefault(false);
-               Application.Run(new Form1());
+               Application.Run(new frm_Start());
           }
      }
 }

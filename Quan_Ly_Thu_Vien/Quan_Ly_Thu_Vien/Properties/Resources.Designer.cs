@@ -93,6 +93,17 @@ namespace Quan_Ly_Thu_Vien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lo_dien_toa_do_thu_vien_song_ao_dep_nhat_singapore_buoc_1_buoc_la_chup_duoc_10_kieu_anh_12_20190606120418 {
+            get {
+                object obj = ResourceManager.GetObject("lo-dien-toa-do-thu-vien-song-ao-dep-nhat-singapore-buoc-1-buoc-la-chup-duoc-10-ki" +
+                        "eu-anh-12_20190606120418", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Phieu_Muon {
             get {
                 object obj = ResourceManager.GetObject("Phieu_Muon", resourceCulture);

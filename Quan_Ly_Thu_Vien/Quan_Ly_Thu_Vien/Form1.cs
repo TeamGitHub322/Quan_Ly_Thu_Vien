@@ -43,10 +43,10 @@ namespace Quan_Ly_Thu_Vien
 
         private void butPhieuMuon_Click(object sender, EventArgs e)
         {
-            //PhieuMuon frm = new PhieuMuon();
-            //frm.ShowDialog();
-            //frm.Close();
-            //frm.Dispose();
+            PhieuMuon frm = new PhieuMuon();
+            frm.ShowDialog();
+            frm.Close();
+            frm.Dispose();
         }
         private Connection connector = new Connection();
         private DataTable table;

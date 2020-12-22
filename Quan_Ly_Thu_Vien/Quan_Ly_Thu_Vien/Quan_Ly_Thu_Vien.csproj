@@ -54,6 +54,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuMuon.designer.cs">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sach.cs">
@@ -62,6 +68,9 @@
     <Compile Include="Sach.designer.cs">
       <DependentUpon>Sach.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PhieuMuon.resx">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

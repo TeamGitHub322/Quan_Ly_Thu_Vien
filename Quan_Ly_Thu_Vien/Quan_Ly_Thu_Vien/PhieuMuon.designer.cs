@@ -96,58 +96,59 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(673, 420);
+            this.panel1.Size = new System.Drawing.Size(848, 480);
             this.panel1.TabIndex = 1;
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel8.Controls.Add(this.textUnique);
             this.panel8.Controls.Add(this.textBCID2);
             this.panel8.Controls.Add(this.label14);
             this.panel8.Controls.Add(this.label15);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(392, 241);
+            this.panel8.Location = new System.Drawing.Point(522, 241);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(281, 179);
+            this.panel8.Size = new System.Drawing.Size(326, 239);
             this.panel8.TabIndex = 17;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // textUnique
             // 
             this.textUnique.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textUnique.Location = new System.Drawing.Point(126, 98);
+            this.textUnique.Location = new System.Drawing.Point(135, 98);
             this.textUnique.Name = "textUnique";
             this.textUnique.ReadOnly = true;
-            this.textUnique.Size = new System.Drawing.Size(102, 20);
+            this.textUnique.Size = new System.Drawing.Size(131, 20);
             this.textUnique.TabIndex = 25;
+            this.textUnique.TextChanged += new System.EventHandler(this.TextUnique_TextChanged);
             // 
             // textBCID2
             // 
             this.textBCID2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBCID2.Location = new System.Drawing.Point(126, 68);
+            this.textBCID2.Location = new System.Drawing.Point(135, 67);
             this.textBCID2.Name = "textBCID2";
             this.textBCID2.ReadOnly = true;
-            this.textBCID2.Size = new System.Drawing.Size(102, 20);
+            this.textBCID2.Size = new System.Drawing.Size(131, 20);
             this.textBCID2.TabIndex = 24;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Gray;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(20, 98);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 21);
+            this.label14.Size = new System.Drawing.Size(117, 21);
             this.label14.TabIndex = 17;
-            this.label14.Text = "Unique Values";
+            this.label14.Text = "Giá trị duy nhất";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Gray;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(20, 67);
@@ -159,18 +160,18 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Gray;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(59, 18);
+            this.label16.Location = new System.Drawing.Point(84, 18);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(161, 25);
+            this.label16.Size = new System.Drawing.Size(153, 25);
             this.label16.TabIndex = 15;
-            this.label16.Text = "Borrow Card Detail";
+            this.label16.Text = "Chi tiết thẻ mượn";
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.textSearch2);
             this.panel7.Controls.Add(this.butSearch2);
@@ -180,7 +181,7 @@
             this.panel7.Controls.Add(this.radView2);
             this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.butFree2);
-            this.panel7.Location = new System.Drawing.Point(218, 247);
+            this.panel7.Location = new System.Drawing.Point(281, 268);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(169, 161);
             this.panel7.TabIndex = 16;
@@ -282,22 +283,23 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 241);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(212, 179);
+            this.panel6.Size = new System.Drawing.Size(212, 239);
             this.panel6.TabIndex = 15;
             // 
             // listView2
             // 
-            this.listView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.listView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader3,
             this.columnHeader4});
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(0, 0);
             this.listView2.MultiSelect = false;
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(212, 179);
+            this.listView2.Size = new System.Drawing.Size(212, 239);
             this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -322,13 +324,13 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(673, 241);
+            this.panel5.Size = new System.Drawing.Size(848, 241);
             this.panel5.TabIndex = 14;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Quan_Ly_Thu_Vien.Properties.Resources.Phieu_Muon_2;
-            this.pictureBox1.Location = new System.Drawing.Point(281, 188);
+            this.pictureBox1.Location = new System.Drawing.Point(337, 188);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 16;
@@ -336,7 +338,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.textDate2);
             this.panel2.Controls.Add(this.textDate1);
             this.panel2.Controls.Add(this.textNote);
@@ -349,9 +351,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(392, 0);
+            this.panel2.Location = new System.Drawing.Point(522, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(281, 241);
+            this.panel2.Size = new System.Drawing.Size(326, 241);
             this.panel2.TabIndex = 13;
             // 
             // textDate2
@@ -360,7 +362,7 @@
             this.textDate2.Location = new System.Drawing.Point(126, 156);
             this.textDate2.Name = "textDate2";
             this.textDate2.ReadOnly = true;
-            this.textDate2.Size = new System.Drawing.Size(102, 20);
+            this.textDate2.Size = new System.Drawing.Size(140, 20);
             this.textDate2.TabIndex = 30;
             // 
             // textDate1
@@ -369,7 +371,7 @@
             this.textDate1.Location = new System.Drawing.Point(126, 122);
             this.textDate1.Name = "textDate1";
             this.textDate1.ReadOnly = true;
-            this.textDate1.Size = new System.Drawing.Size(102, 20);
+            this.textDate1.Size = new System.Drawing.Size(140, 20);
             this.textDate1.TabIndex = 29;
             // 
             // textNote
@@ -387,7 +389,7 @@
             this.textReaderID.Location = new System.Drawing.Point(126, 88);
             this.textReaderID.Name = "textReaderID";
             this.textReaderID.ReadOnly = true;
-            this.textReaderID.Size = new System.Drawing.Size(102, 20);
+            this.textReaderID.Size = new System.Drawing.Size(140, 20);
             this.textReaderID.TabIndex = 25;
             // 
             // textBCID1
@@ -396,84 +398,84 @@
             this.textBCID1.Location = new System.Drawing.Point(126, 54);
             this.textBCID1.Name = "textBCID1";
             this.textBCID1.ReadOnly = true;
-            this.textBCID1.Size = new System.Drawing.Size(102, 20);
+            this.textBCID1.Size = new System.Drawing.Size(140, 20);
             this.textBCID1.TabIndex = 24;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Gray;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(20, 155);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 21);
+            this.label10.Size = new System.Drawing.Size(70, 21);
             this.label10.TabIndex = 22;
-            this.label10.Text = "Return Date";
+            this.label10.Text = "Ngày trả";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gray;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(20, 121);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 21);
+            this.label5.Size = new System.Drawing.Size(83, 21);
             this.label5.TabIndex = 21;
-            this.label5.Text = "Borrow Date";
+            this.label5.Text = "Ngày mượn";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Gray;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(20, 189);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 21);
+            this.label6.Size = new System.Drawing.Size(60, 21);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Note";
+            this.label6.Text = "Ghi chú";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gray;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(20, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 21);
+            this.label4.Size = new System.Drawing.Size(61, 21);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Reader ID";
+            this.label4.Text = "ID sách";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Gray;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(20, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 21);
+            this.label3.Size = new System.Drawing.Size(56, 21);
             this.label3.TabIndex = 16;
-            this.label3.Text = "Card ID";
+            this.label3.Text = "ID thẻ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Gray;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(59, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 25);
+            this.label2.Size = new System.Drawing.Size(178, 25);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Borrow Card Information";
+            this.label2.Text = "Thông tin phiếu mượn";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.textSearch);
             this.panel4.Controls.Add(this.butSearch);
@@ -483,7 +485,7 @@
             this.panel4.Controls.Add(this.radView);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.butFree);
-            this.panel4.Location = new System.Drawing.Point(218, 9);
+            this.panel4.Location = new System.Drawing.Point(281, 16);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(169, 166);
             this.panel4.TabIndex = 12;
@@ -590,13 +592,14 @@
             // 
             // listView1
             // 
-            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
@@ -614,16 +617,16 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Reader ID";
-            this.columnHeader2.Width = 106;
+            this.columnHeader2.Width = 122;
             // 
             // PhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 420);
+            this.ClientSize = new System.Drawing.Size(848, 480);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(689, 458);
+            this.MaximumSize = new System.Drawing.Size(900, 600);
             this.MinimumSize = new System.Drawing.Size(689, 458);
             this.Name = "PhieuMuon";
             this.Text = "Phiếu Mượn";

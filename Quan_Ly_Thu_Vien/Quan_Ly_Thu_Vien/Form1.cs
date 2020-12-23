@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyThuVien;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,19 +28,19 @@ namespace Quan_Ly_Thu_Vien
 
         private void butSach_Click(object sender, EventArgs e)
         {
-            //Sach frm = new Sach();
-            //frm.ShowDialog();
-            //frm.Close();
-            //frm.Dispose();
-        }
+               Sach frm = new Sach();
+               frm.ShowDialog();
+               frm.Close();
+               frm.Dispose();
+          }
 
         private void butNXB_Click(object sender, EventArgs e)
         {
-            //NXBTL frm = new NXBTL();
-            //frm.ShowDialog();
-            //frm.Close();
-            //frm.Dispose();
-        }
+               //NXBTL frm = new NXBTL();
+               //frm.ShowDialog();
+               //frm.Close();
+               //frm.Dispose();
+          }
 
         private void butPhieuMuon_Click(object sender, EventArgs e)
         {

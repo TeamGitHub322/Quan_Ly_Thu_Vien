@@ -50,7 +50,7 @@
             // 
             this.butBanDoc.Enabled = false;
             this.butBanDoc.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.butBanDoc.Image = ((System.Drawing.Image)(resources.GetObject("butBanDoc.Image")));
+            //this.butBanDoc.Image = ((System.Drawing.Image)(resources.GetObject("butBanDoc.Image")));
             this.butBanDoc.Location = new System.Drawing.Point(13, 13);
             this.butBanDoc.Margin = new System.Windows.Forms.Padding(4);
             this.butBanDoc.Name = "butBanDoc";
@@ -66,7 +66,7 @@
             // 
             this.butSach.Enabled = false;
             this.butSach.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.butSach.Image = ((System.Drawing.Image)(resources.GetObject("butSach.Image")));
+            //this.butSach.Image = ((System.Drawing.Image)(resources.GetObject("butSach.Image")));
             this.butSach.Location = new System.Drawing.Point(13, 145);
             this.butSach.Margin = new System.Windows.Forms.Padding(4);
             this.butSach.Name = "butSach";
@@ -98,7 +98,7 @@
             // 
             this.butPhieuMuon.Enabled = false;
             this.butPhieuMuon.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.butPhieuMuon.Image = ((System.Drawing.Image)(resources.GetObject("butPhieuMuon.Image")));
+            //this.butPhieuMuon.Image = ((System.Drawing.Image)(resources.GetObject("butPhieuMuon.Image")));
             this.butPhieuMuon.Location = new System.Drawing.Point(13, 403);
             this.butPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.butPhieuMuon.Name = "butPhieuMuon";
@@ -184,7 +184,7 @@
             // 
             this.butHuongDan.Enabled = false;
             this.butHuongDan.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.butHuongDan.Image = ((System.Drawing.Image)(resources.GetObject("butHuongDan.Image")));
+            //this.butHuongDan.Image = ((System.Drawing.Image)(resources.GetObject("butHuongDan.Image")));
             this.butHuongDan.Location = new System.Drawing.Point(13, 535);
             this.butHuongDan.Margin = new System.Windows.Forms.Padding(4);
             this.butHuongDan.Name = "butHuongDan";
@@ -231,7 +231,7 @@
             this.Controls.Add(this.butNXB);
             this.Controls.Add(this.butSach);
             this.Controls.Add(this.butBanDoc);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(720, 763);
             this.MinimumSize = new System.Drawing.Size(720, 763);
